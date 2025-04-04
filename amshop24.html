@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Shop 24 | Online Shopping</title>
+    <link rel="stylesheet" href="amshop24.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">AM Shop 24</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i> Search</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-store"></i> Shop</a></li>
+                    <li><a href="#"><i class="fas fa-th-large"></i> Categories</a></li>
+                    <li><a href="#" id="cart-link"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">(0)</span></a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Shop 24/7 with AM Shop 24</h1>
+            <p>Find amazing deals on thousands of products. Fast shipping, secure payments, and 24/7 customer support.</p>
+            <a href="#" class="btn"><i class="fas fa-shopping-bag"></i> Shop Now</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-tags"></i> Daily Deals</a>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-laptop"></i></div>
+                    <div class="category-content">
+                        <h3>Electronics</h3>
+                        <p>Latest gadgets and tech accessories</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="category-content">
+                        <h3>Fashion</h3>
+                        <p>Trendy clothes and accessories</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-home"></i></div>
+                    <div class="category-content">
+                        <h3>Home & Kitchen</h3>
+                        <p>Everything for your living space</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-spa"></i></div>
+                    <div class="category-content">
+                        <h3>Beauty & Health</h3>
+                        <p>Self-care and wellness products</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card" data-id="1" data-name="Premium Smartphone" data-price="699.99" data-image="smartphone">
+                    <div class="product-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="product-content">
+                        <h3>Premium Smartphone</h3>
+                        <div class="rating">★★★★★</div>
+                        <div class="price">$699.99</div>
+                        <button class="btn add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="2" data-name="Wireless Headphones" data-price="129.99" data-image="headphones">
+                    <div class="product-icon"><i class="fas fa-headphones"></i></div>
+                    <div class="product-content">
+                        <h3>Wireless Headphones</h3>
+                        <div class="rating">★★★★☆</div>
+                        <div class="price">$129.99</div>
+                        <button class="btn add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="3" data-name="Smart Watch" data-price="199.99" data-image="smartwatch">
+                    <div class="product-icon"><i class="fas fa-clock"></i></div>
+                    <div class="product-content">
+                        <h3>Smart Watch</h3>
+                        <div class="rating">★★★★★</div>
+                        <div class="price">$199.99</div>
+                        <button class="btn add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="4" data-name="Ultrabook Laptop" data-price="1299.99" data-image="laptop">
+                    <div class="product-icon"><i class="fas fa-laptop"></i></div>
+                    <div class="product-content">
+                        <h3>Ultrabook Laptop</h3>
+                        <div class="rating">★★★★☆</div>
+                        <div class="price">$1299.99</div>
+                        <button class="btn add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose AM Shop 24</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-truck-fast"></i></div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your products delivered within 24 hours in select areas.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Secure Payment</h3>
+                    <p>Your payment information is always protected with us.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-headset"></i></div>
+                    <h3>24/7 Support</h3>
+                    <p>Our customer service team is always ready to help you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on new products and special offers directly to your inbox.</p>
+            <form class="newsletter" id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>AM Shop 24</h3>
+                    <p>Your one-stop shop for all your needs. Shop anytime, anywhere with our 24/7 online store.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-box"></i> All Products</a></li>
+                        <li><a href="#"><i class="fas fa-star"></i> New Arrivals</a></li>
+                        <li><a href="#"><i class="fas fa-award"></i> Best Sellers</a></li>
+                        <li><a href="#"><i class="fas fa-percentage"></i> Deals & Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> Help Center</a></li>
+                        <li><a href="#"><i class="fas fa-truck-loading"></i> Order Tracking</a></li>
+                        <li><a href="#"><i class="fas fa-undo"></i> Returns & Refunds</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+                        <li><a href="#"><i class="fas fa-shipping-fast"></i> Shipping Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 AM Shop 24. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2><i class="fas fa-shopping-cart"></i> Your Shopping Cart</h2>
+            <div id="cart-items-container">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Cart items will be added here dynamically -->
+                    </tbody>
+                </table>
+                <div id="empty-cart-message" style="display: none; text-align: center; padding: 2rem;">
+                    <p><i class="fas fa-shopping-cart fa-2x"></i><br>Your cart is empty. Start shopping now!</p>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <div>
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div>
+                    <span>Shipping:</span>
+                    <span id="cart-shipping">$0.00</span>
+                </div>
+                <div>
+                    <span>Tax:</span>
+                    <span id="cart-tax">$0.00</span>
+                </div>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+            </div>
+            <div class="checkout-options">
+                <button class="btn" id="continue-shopping"><i class="fas fa-arrow-left"></i> Continue Shopping</button>
+                <button class="btn btn-secondary" id="checkout-btn"><i class="fas fa-credit-card"></i> Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="order-success">
+                <div class="order-success-icon"><i class="fas fa-check-circle"></i></div>
+                <h2>Order Placed Successfully!</h2>
+                <p>Thank you for your purchase. Your order number is <span id="order-number"></span>.</p>
+                <p>We have sent a confirmation email to your registered email address.</p>
+                <button class="btn" id="continue-shopping-after-order"><i class="fas fa-shopping-bag"></i> Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"><i class="fas fa-check-circle"></i> Item added to cart!</div>
+
+    <!-- Scroll to Top Button -->
+    <div id="scroll-to-top" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize cart from localStorage if available
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            updateCartCount();
+            
+            // Add to cart functionality
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productCard = this.closest('.product-card');
+                    const product = {
+                        id: productCard.dataset.id,
+                        name: productCard.dataset.name,
+                        price: parseFloat(productCard.dataset.price),
+                        image: productCard.dataset.image,
+                        quantity: 1
+                    };
+                    
+                    // Check if product already in cart
+                    const existingProductIndex = cart.findIndex(item => item.id === product.id);
+                    
+                    if (existingProductIndex !== -1) {
+                        // Increment quantity if already in cart
+                        cart[existingProductIndex].quantity += 1;
+                    } else {
+                        // Add new product to cart
+                        cart.push(product);
+                    }
+                    
+                    // Save cart to localStorage
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    
+                    // Update cart count
+                    updateCartCount();
+                    
+                    // Show toast notification
+                    showToast('Item added to cart!');
+                });
+            });
+            
+            // Cart modal functionality
+            const cartLink = document.getElementById('cart-link');
+            const cartModal = document.getElementById('cart-modal');
+            const continueShopping = document.getElementById('continue-shopping');
+            const continueShoppingAfterOrder = document.getElementById('continue-shopping-after-order');
+            const closeButtons = document.querySelectorAll('.close-modal');
+            const checkoutBtn = document.getElementById('checkout-btn');
+            const orderModal = document.getElementById('order-modal');
+            
+            cartLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                openCartModal();
+            });
+            
+            continueShopping.addEventListener('click', function() {
+                cartModal.style.display = 'none';
+            });
+            
+            continueShoppingAfterOrder.addEventListener('click', function() {
+                orderModal.style.display = 'none';
+                // Clear cart after successful order
+                cart = [];
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCartCount();
+            });
+            
+            checkoutBtn.addEventListener('click', function() {
+                if (cart.length > 0) {
+                    // Process checkout
+                    processCheckout();
+                } else {
+                    alert('Your cart is empty!');
+                }
+            });
+            
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.closest('.modal').style.display = 'none';
+                });
+            });
+            
+            window.addEventListener('click', function(e) {
+                if (e.target === cartModal) {
+                    cartModal.style.display = 'none';
+                }
+                if (e.target === orderModal) {
+                    orderModal.style.display = 'none';
+                }
+            });
+            
+            // Function to update cart count
+            function updateCartCount() {
+                const cartCount = document.getElementById('cart-count');
+                const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+                cartCount.innerText = `(${totalItems})`;
+            }
+            
+            // Function to show toast notification
+            function showToast(message) {
+                const toast = document.getElementById('toast');
+                toast.innerText = message;
+                toast.className = 'toast show';
+                setTimeout(() => {
+                    toast.className = toast.className.replace('show', '');
+                }, 3000);
+            }
+            
+            // Function to open cart modal
+            function openCartModal() {
+                cartModal.style.display = 'block';
+                renderCartItems();
+                calculateCartTotals();
+            }
+            
+            // Function to render cart items
+            function renderCartItems() {
+                const cartItemsContainer = document.getElementById('cart-items');
+                const emptyCartMessage = document.getElementById('empty-cart-message');
+                
+                // Clear previous items
+                cartItemsContainer.innerHTML = '';
+                
+                if (cart.length === 0) {
+                    emptyCartMessage.style.display = 'block';
+                    document.querySelector('.cart-table').style.display = 'none';
+                } else {
+                    emptyCartMessage.style.display = 'none';
+                    document.querySelector('.cart-table').style.display = 'table';
+                    
+                    // Add items to cart
+                    cart.forEach((item, index) => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>
+                                <div class="cart-product">
+                                    <div class="cart-product-icon"><i class="fas fa-${item.image}"></i></div>
+                                    <div class="cart-product-info">
+                                        <h4>${item.name}</h4>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>$${item.price.toFixed(2)}</td>
+                            <td>
+                                <div class="quantity-control">
+                                    <button class="quantity-btn decrease" data-index="${index}">-</button>
+                                    <span>${item.quantity}</span>
+                                    <button class="quantity-btn increase" data-index="${index}">+</button>
+                                </div>
+                            </td>
+                            <td>$${(item.price * item.quantity).toFixed(2)}</td>
+                            <td>
+                                <button class="remove-btn" data-index="${index}">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        `;
+                        cartItemsContainer.appendChild(row);
+                    });
+                    
+                    // Add event listeners to quantity buttons
+                    document.querySelectorAll('.quantity-btn').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const index = parseInt(this.dataset.index);
+                            if (this.classList.contains('decrease')) {
+                                if (cart[index].quantity > 1) {
+                                    cart[index].quantity -= 1;
+                                }
+                            } else if (this.classList.contains('increase')) {
+                                cart[index].quantity += 1;
+                            }
+                            
+                            // Save cart to localStorage
+                            localStorage.setItem('cart', JSON.stringify(cart));
+                            
+                            // Re-render cart
+                            renderCartItems();
+                            calculateCartTotals();
+                            updateCartCount();
+                        });
+                    });
+                    
+                    // Add event listeners to remove buttons
+                    document.querySelectorAll('.remove-btn').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const index = parseInt(this.dataset.index);
+                            cart.splice(index, 1);
+                            
+                            // Save cart to localStorage
+                            localStorage.setItem('cart', JSON.stringify(cart));
+                            
+                            // Re-render cart
+                            renderCartItems();
+                            calculateCartTotals();
+                            updateCartCount();
+                        });
+                    });
+                }
+            }
+            
+            // Function to calculate cart totals
+            function calculateCartTotals() {
+                const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+                const shipping = subtotal > 0 ? 10 : 0;
+                const tax = subtotal * 0.07;
+                const total = subtotal + shipping + tax;
+                
+                document.getElementById('cart-subtotal').innerText = `$${subtotal.toFixed(2)}`;
+                document.getElementById('cart-shipping').innerText = `$${shipping.toFixed(2)}`;
+                document.getElementById('cart-tax').innerText = `$${tax.toFixed(2)}`;
+                document.getElementById('cart-total').innerText = `$${total.toFixed(2)}`;
+            }
+            
+            // Function to process checkout
+            function processCheckout() {
+                // Generate random order number
+                const orderNumber = 'AM-' + Math.floor(Math.random() * 1000000).toString().padStart(6, '0');
+                document.getElementById('order-number').innerText = orderNumber;
+                
+                // Hide cart modal
+                cartModal.style.display = 'none';
+                
+                // Show order success modal
+                orderModal.style.display = 'block';
+            }
+            
+            // Scroll to top functionality
+            const scrollToTopBtn = document.getElementById('scroll-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.style.display = 'block';
+                } else {
+                    scrollToTopBtn.style.display = 'none';
+                }
+            });
+            
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
